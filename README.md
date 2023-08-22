@@ -12,5 +12,5 @@ The script itself relies on a number of input files that can be found in the src
   of the state of Texas. 
   
 
-<img width="500" height="500" src="Screen Shot 2023-08-22 at 12.37.48 AM.png">
+<img width="500" height="400" src="Screen Shot 2023-08-22 at 12.37.48 AM.png">
 
