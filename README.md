@@ -12,5 +12,5 @@ The script itself relies on a number of input files that can be found in the src
   of the state of Texas. 
   
 
-<img width="1440" src="https://github.com/devTy33/Ercot-Grid-Data-Visualization/Screen Shot 2023-08-22 at 12.37.48 AM.png">
+<img width="1440" src="Screen Shot 2023-08-22 at 12.37.48 AM.png">
 
