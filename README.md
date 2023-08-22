@@ -17,4 +17,6 @@ The script itself relies on a number of input files that can be found in the src
   On the right, you can also see different colorations on the map itself. If you look at the slide bar key on the right of the map, 
   you can see that different colors correspond to different levels of oscillation intensity. So in the image, it's blue toward the bottom 
   bus because it's experiencing intense oscillations.
-  Using interpolation, I'm able to correspond the color shading to specific areas on the map that are experiencing oscillations.
+  Using interpolation, I'm able to correspond the color shading to specific areas on the map that are experiencing oscillations (the blue 
+  fades in the image).
+  The sliding bar on the right of the map and the red dot on the graph represents the mean frequency for that given point in time.
