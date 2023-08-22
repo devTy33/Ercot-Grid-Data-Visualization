@@ -11,9 +11,9 @@ The script itself relies on a number of input files that can be found in the src
   To visualize this data, the Python script reads oscillation data for a given day and turns it into a video with a graph and a heat map
   of the state of Texas. 
   
-<div>
+
   <img width="1440" alt="Screen Shot 2023-08-22 at 12 33 22 AM" src="https://github.com/devTy33/Ercot-Grid-Data-      
   Visualization/assets/107730904/9c88c039-25fa-4c35-8a5f-e33e78b3e5a0"
-    width="200"
-    height="200"/>
-</div>
+    width="500"
+    height="500"/>
+
