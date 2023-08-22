@@ -20,3 +20,5 @@ The script itself relies on a number of input files that can be found in the src
   Using interpolation, I'm able to correspond the color shading to specific areas on the map that are experiencing oscillations (the blue 
   fades in the image).
   The sliding bar on the right of the map and the red dot on the graph represents the mean frequency for that given point in time.
+
+  You can go to this link to view the whole video: https://drive.google.com/drive/folders/1YD1qlsZ6W5iJnMOGyFfVl5tJQoP9ilgQ?usp=drive_link
