@@ -13,4 +13,8 @@ The script itself relies on a number of input files that can be found in the src
   
 <img width="500" height="400" src="Screen Shot 2023-08-22 at 12.37.48 AM.png">
 
-  Each line on the graph represents a bus and each triangle on the map is also a corresponding bus. 
+  Each line on the graph represents a bus and each triangle on the map is also a corresponding bus.
+  On the right, you can also see different colorations on the map itself. If you look at the slide bar key on the right of the map, 
+  you can see that different colors correspond to different levels of oscillation intensity. So in the image, it's blue toward the bottom 
+  bus because it's experiencing intense oscillations.
+  Using interpolation, I'm able to correspond the color shading to specific areas on the map that are experiencing oscillations.
