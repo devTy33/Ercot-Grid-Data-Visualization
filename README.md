@@ -12,3 +12,4 @@ What this program tries to accomplish:
   of the state of Texas. 
   
 
+<img width="1440" alt="Screen Shot 2023-08-22 at 12 33 22 AM" src="https://github.com/devTy33/Ercot-Grid-Data-Visualization/assets/107730904/9c88c039-25fa-4c35-8a5f-e33e78b3e5a0">
