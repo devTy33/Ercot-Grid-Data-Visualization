@@ -9,8 +9,8 @@ The script itself relies on a number of input files that can be found in the src
   of the health of the grid. 
 
   To visualize this data, the Python script reads oscillation data for a given day and turns it into a video with a graph and a heat map
-  of the state of Texas. 
+  of the state of Texas. Here is one of the frames:
   
-
 <img width="500" height="400" src="Screen Shot 2023-08-22 at 12.37.48 AM.png">
 
+  Each line on the graph represents a bus and each triangle on the map is also a corresponding bus. 
