@@ -3,7 +3,7 @@ Python script to visualize frequency oscillation points in the Texas ERCOT power
 
 The script itself relies on a number of input files that can be found in the inputs folder.
 
-<h2> What this program tries to accomplish </h2>
+## What this program tries to accomplish
   There are censors scattered across the Texas ERCOT power grid called 'buses'. These buses collect power grid frequency oscillation data.
   Each bus collects thousands of data points per day (roughly 4000), and it's important to visualize this data to get an understanding
   of the health of the grid. 
@@ -23,12 +23,12 @@ The script itself relies on a number of input files that can be found in the inp
 
   You can go to this link to view the whole video: https://drive.google.com/drive/folders/1YD1qlsZ6W5iJnMOGyFfVl5tJQoP9ilgQ?usp=drive_link
 
-<h2>The Code Explained</h2>
-<h3>Left Half (Oscillation Graph)</h3>
+## The Code Explained
+### Left Half (Oscillation Graph)
 Using pandas, I read in the oscillation_data.xlsx file and used matplotlib to represent each column of the data file as a line on a graph. The first column of the oscillation file contains all the time of day (military time) that is used to make the x axis/x values. To create the red line that the dot tracks on, I used the "find_median()" function to get the average oscillation value for each given
 time of day and plotted those values with matplotlib. The median array is then iterated over, a dot is plotted at every point, each plot containing a dot is converted to an openCV image object using the function "figure2cv2img2(fig)", and finally each image object is concatenated to get the video effect.
 
-<h3>Right Half (Color Map)</h3>
+### Right Half (Color Map)
 The outline of the Ercot grid(isn't the exact outline of Texas) and the triangles (bus locations) come from the data files ERCOT.txt and BusLocations.xlsx respectively. Each file is read with pandas and plotted via matplotlib.  
 For each median oscillation value, the "build_map()" function is called and returns an openCV image object to be concatenated into video. In the build_map() function:
 
