@@ -34,6 +34,7 @@ def backround_generator(x_points, y_points, med_vals):
     
     return (dot,saved_bg, fig)
 
+#redraws the graph only for things that changed (the moving median dot)
 def line_plot(x_points, median, index, d, bg, sf):
     #print(sf.canvas.get_width_height())
     sf.canvas.restore_region(bg)
@@ -130,11 +131,13 @@ def figure2cv2img2(fig):
     img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
     return img
 
+#builds the color map on the right side of the screen
 def build_map(idx, osc_data, num_elements, min_y, max_y, ercot_x_vals, ercot_y_vals, multitude, latitude):
     gc.collect()
     #store oscillation data for each respective bus location (for each given time)
     oscilations = []
     
+    #at a given row in the oscillation data access the given oscillation value for each bus and store it in the array
     for i in osc_data[(idx*num_elements):((idx*num_elements) + num_elements)]:     #oscilation data across a row
         oscilations.append(i)
 
@@ -171,7 +174,7 @@ def build_map(idx, osc_data, num_elements, min_y, max_y, ercot_x_vals, ercot_y_v
         inner_z.append(inner_z[n_nei])
 
     
-    zi = scipy.interpolate.griddata((inner_x, inner_y), inner_z, tuple(np.meshgrid(xi, yi)), method='linear') 
+    zi = scipy.interpolate.griddata((inner_x, inner_y), inner_z, tuple(np.meshgrid(xi, yi)), method='linear')       #preform interpolation 
 
     #limit the range of values in zi
     min_freq = min_y
@@ -184,7 +187,7 @@ def build_map(idx, osc_data, num_elements, min_y, max_y, ercot_x_vals, ercot_y_v
         zi[cor[1]][cor[0]] = np.nan
 
 
-    #Graph settings
+    #------Graph settings
     size_ = (9,9)
     fig = plt.figure(figsize=size_, frameon=True)
     ax = fig.add_axes([0.1, 0.15, 0.7, 0.7])
