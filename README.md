@@ -31,8 +31,9 @@ time of day and plotted those values with matplotlib. The median array is then i
 <h3>Right Half (Color Map)</h3>
 The outline of the Ercot grid(isn't the exact outline of Texas) and the triangles (bus locations) come from the data files ERCOT.txt and BusLocations.xlsx respectively. Each file is read with pandas and plotted via matplotlib.  
 For each median oscillation value, the "build_map()" function is called and returns an openCV image object to be concatenated into video. In the build_map() function:
-1. Oscillation values are extracted for each bus 
-2. Bus and oscillation data are filtered based on if they fall inside the grid outline 
+
+1. Oscillation values are extracted for each bus
+2. Bus and oscillation data are filtered based on if they fall inside the grid outline
 3. Nearest neighbor interpolation is used with the scipy library and a grid file (clip_area_ERCOT.txt) is read in to interpolate on
 4. A colored contour plot is generated based on the interpolated data (matplotlib and numpy)
 
