@@ -1,7 +1,7 @@
 # Ercot-Grid-Data-Visualization
 Python script to visualize frequency oscillation points in the Texas ERCOT power grid.
 
-The script itself relies on a number of input files that can be found in the src folder.
+The script itself relies on a number of input files that can be found in the inputs folder.
 
 <h2> What this program tries to accomplish </h2>
   There are censors scattered across the Texas ERCOT power grid called 'buses'. These buses collect power grid frequency oscillation data.
